@@ -1,0 +1,21 @@
+\documentclass[12pt]{article}
+\pagestyle {empty}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\begin{document}
+
+\begin{algorithm}
+\begin{algorithmic}
+\FOR{$j \gets 1$ to $length[A]$}
+\STATE $key \gets A[j]$
+\STATE $i \gets j-1$
+\WHILE{$i > 0$ and $A[i] > key$}
+\STATE $A[i+1] \gets A[i]$
+\STATE $i \gets i-1$
+\ENDWHILE
+\STATE $A[i+1] \gets key$
+\ENDFOR
+\end{algorithmic}
+\caption{Insertion sort(A)}
+\end{algorithm}
+\end{document}
