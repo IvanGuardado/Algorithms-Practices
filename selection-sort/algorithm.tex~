@@ -1,0 +1,22 @@
+\documentclass[12pt]{article}
+\pagestyle {empty}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\begin{document}
+\begin{algorithm}
+\begin{algorithmic}
+\FOR{$i \gets 1$ to $length[A]-1$}
+\STATE {$min \gets i$}
+\FOR{$j \gets i+1$ to $length[A]$}
+\IF{$A[j]<A[min]$}
+\STATE {$min \gets j$}
+\ENDIF
+\ENDFOR
+\STATE $aux \gets A[i]$
+\STATE $A[i] \gets A[min]$
+\STATE $A[min] \gets A[i]$
+\ENDFOR
+\end{algorithmic}
+\caption{Selection Sort(A)}
+\end{algorithm}
+\end{document}
